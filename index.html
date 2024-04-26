@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Calculator</title>
+	<style>
+		.any{
+			width: 300px;
+			height: 300px;
+			border: dashed;
+			margin-left: 40%;
+			margin-top: 1%;
+		}
+
+		body{
+            background-color: lightcyan;
+
+
+		}
+	</style>
+</head>
+<body>
+	<img src="	what.gif" style="	width: 	350px; margin-left: 39%">
+	<div class="any">
+
+		<h3>Hello! I am your calculator.</h3>
+		<form>
+            <p>Enter value for x:</p> <input type="text" id="num1" style="	width: 	200px; height: 	30px;">
+            <p>Enter value for y:</p> <input type="text" id="num2" style="	width: 	200px; height:	30px">
+
+        </form>
+
+	</div>
+
+ <br> <button type="Submit" class="btn btn-success" onclick="product()" style="	width: 	250px; margin-left: 30%;">calculate for the product</button>
+ <script>
+            function product(){
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                    var product = Number(num1) * Number(num2);
+                window.alert("The product is: " + product);
+            }
+        </script>
+<br> <br> <button type="Submit" class="btn btn-primary" onclick="remainder()" style="	width: 	250px; margin-left: 30%;">calculate for the remainder</button>
+ <script>
+            function remainder(){
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                    var remainder = Number(num1) % Number(num2);
+                window.alert("The remainder is: " + remainder);
+            }
+        </script>
+
+       <br> <br> <button type="Submit" class="btn btn-warning" onclick="exponent()" style="	width: 	250px; margin-left: 	30%;">calculate for the exponent</button>
+ <script>
+            function exponent(){
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                    var exponent = Number(num1) ** Number(num2);
+                window.alert("The exponent is: " + exponent);
+            }
+        </script>
+
+        <br> <br> <button type="Submit" class="btn btn-success" onclick="equality()" style="	width: 	250px; margin-left: 	30%;">look for equality</button>
+ <script>
+            function equality(){
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                    var equality = Number(num1) == Number(num2);
+                window.alert("The equality is: " + equality);
+            }
+        </script>
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
